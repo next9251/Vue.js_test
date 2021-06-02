@@ -56,7 +56,6 @@
             <a href="" class="common-btn service-btn">サービス詳細</a>
           </div>
         </div>
-        </div>
       </div>
 
       <div class="company">
@@ -95,8 +94,8 @@
 </template>
 
 <script>
-import CommonHeader from "./assets/CommonHeader.vue";
-import CommonFooter from "./assets/CommonFooter.vue";
+import CommonHeader from "./components/CommonHeader.vue";
+import CommonFooter from "./components/CommonFooter.vue";
 export default {
   components:{
     CommonHeader,
@@ -317,11 +316,11 @@ input, select {
 }
 
 .company-img {
-  background: url(../img/company.jpeg) center/cover no-repeat;
+  background: url("./assets/company.jpeg") center/cover no-repeat;
 }
 
 .recruit-img {
-  background: url(../img/recruit.jpg) center/cover no-repeat;
+  background: url("./assets/recruit.jpg") center/cover no-repeat;
 }
 
 .company-title {
@@ -363,7 +362,7 @@ input, select {
 }
 
 .contact {
-  background: url(../img/contact-bg.jpg) center/cover no-repeat;
+  background: url("./assets/contact-bg.jpg") center/cover no-repeat;
   padding: 10%;
 }
 
