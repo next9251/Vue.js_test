@@ -1,5 +1,6 @@
 <template>
-  <header id="header">
+  <div id="firstview">
+   <header id="header">
     <div class="header-wrap">
      <h1 class="header-logo">estra inc.</h1>
      <nav class="header-nav">
@@ -41,8 +42,19 @@
        </li>
       </ul>
     </nav>
-</header>
-</template>
+   </header>
+   <p class="catchcopy">機械ではできない仕事を</p>
+   <div class="news flex">
+     <div class="news-content">
+       <p class="news_date">2019/01/01</p>
+       <p class="news_title">
+        ニュースタイトルがここには入ります。3月の決算報告書
+      </p>
+     </div>
+    <div class="news-icon">news</div>
+   </div>
+  </div>
+ </template>
 
 <script>
 export default {
@@ -65,6 +77,7 @@ export default {
   line-height: 70px;
   background: rgba(0, 0, 0, 1);
 }
+
 .header-wrap {
   display: flex;
   justify-content: space-between;
@@ -89,7 +102,111 @@ export default {
   color: #fff;
 }
 
+#firstview {
+  height: 100%;
+  background: url("../assets/eyecatch.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.catchcopy {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+}
+
+.news {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+}
+.news-content {
+  background: #fff;
+  width: 80%;
+  height: 70px;
+}
+
+.news_date {
+  padding-left: 5px;
+}
+
+.news_title {
+  padding: 0 15px;
+}
+.news-icon {
+  background: #000;
+  width: 20%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+}
+
 @media screen and (max-width: 768px) {
+    .header-nav {
+    display: none;
+  }
+  .catchcopy {
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+  }
+  .news {
+    width: 100%;
+  }
+  .mission-content {
+    padding: 10% 0;
+    margin: 0 auto;
+  }
+  .service-content_inner {
+    width: 60%;
+    left: 10%;
+  }
+  .service-img {
+    width: 70%;
+    margin-left: 30%;
+  }
+  .service-img_second {
+    margin: 0 30% 0 0;
+  }
+  .service-content_inner-second {
+    left: 30%;
+  }
+  .service-content {
+    margin: 0 auto;
+  }
+  .service-content_inner {
+    width: 90%;
+    position: inherit;
+    background: rgba(255, 255, 255, 0.8);
+    left: 5%;
+  }
+  .service-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .recruit-company_size {
+    width: 100%;
+  }
+  .faq-title {
+    font-size: 30px;
+  }
+  .top-footer .header-logo {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
   #hamburger {
     width: 40px;
     height: 40px;

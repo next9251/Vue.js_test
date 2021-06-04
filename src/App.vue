@@ -2,17 +2,6 @@
   <div id ="app">
     <CommonHeader></CommonHeader>
     <main>
-     <p class="catchcopy">機械ではできない仕事を</p>
-      <div class="news flex">
-        <div class="news-content">
-          <p class="news_date">2019/01/01</p>
-          <p class="news_title">
-            ニュースタイトルがここには入ります。3月の決算報告書
-          </p>
-        </div>
-        <div class="news-icon">news</div>
-      </div>
-
       <div class="mission">
         <div class="mission-content">
           <h2 class="mission_title">
@@ -200,33 +189,58 @@ input, select {
   vertical-align:middle;
 }
 
-.news {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 50%;
+
+html {
+  height: 100%;
 }
-.news-content {
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+body {
+  color: #333333;
+  height: 100%;
+}
+
+.mgb-15 {
+  margin-bottom: 15px;
+}
+
+.common-btn {
+  display: block;
+  width: 130px;
+  height: 40px;
+  line-height: 40px;
   background: #fff;
-  width: 80%;
-  height: 70px;
-}
-
-.news_date {
-  padding-left: 5px;
-}
-
-.news_title {
-  padding: 0 15px;
-}
-.news-icon {
-  background: #000;
-  width: 20%;
-  height: 70px;
-  line-height: 70px;
+  padding: 0 20px;
+  color: #000;
   text-align: center;
-  color: #fff;
 }
+
+.section-title {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.section-title span {
+  font-size: 20px;
+}
+
 
 
 .mission {
@@ -252,12 +266,12 @@ input, select {
   font-size: 30px;
 }
 
-.mission-img {
+.mission-img img{
   width: 40%;
   position: absolute;
   bottom: -10%;
   right: 5%;
-  z-index: -999;
+  z-index: -9;
 }
 
 
@@ -276,12 +290,12 @@ input, select {
   padding-bottom: 15%;
 }
 
-.service-img {
+.service-img img{
   width: 50%;
   margin-left: 50%;
 }
 
-.service-img_second {
+.service-img_second img{
   margin: 0 50% 0 0;
 }
 
@@ -409,11 +423,11 @@ input, select {
     width: 60%;
     left: 10%;
   }
-  .service-img {
+  .service-img img{
     width: 70%;
     margin-left: 30%;
   }
-  .service-img_second {
+  .service-img_second img{
     margin: 0 30% 0 0;
   }
   .service-content_inner-second {
@@ -428,7 +442,7 @@ input, select {
     background: rgba(255, 255, 255, 0.8);
     left: 5%;
   }
-  .service-img {
+  .service-img img{
     width: 90%;
     margin: 0 auto;
   }
