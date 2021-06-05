@@ -2,25 +2,8 @@
   <div id="firstview">
    <header id="header">
     <div class="header-wrap">
-     <h1 class="header-logo">estra inc.</h1>
-     <nav class="header-nav">
-      <ul>
-       <li><a href="#">home</a></li>
-       <li><a href="#">about</a></li>
-       <li><a href="#">service</a></li>
-       <li><a href="#">works</a></li>
-       <li><a href="#">price</a></li>
-       <li><a href="#">contact</a></li>
-      </ul>
-     </nav>
-    </div>
-    <div id="hamburger" @click="hamburger()" :class="{'active':isClass}">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <p class="header-title">estra inc.</p>
     <nav class="menu-content" :class="{'open':isClass}">
-      <p class="header-title">estra inc.</p>
       <ul class="menu-content_inner">
        <li>
          <a href="#">home</a>
@@ -42,6 +25,35 @@
        </li>
       </ul>
     </nav>
+    </div>
+    <div id="hamburger" @click="hamburger()" :class="{'active':isClass}">
+     <span></span>
+     <span></span>
+     <span></span>
+    </div>
+    <nav class="menu-content" :class="{'open':isClass}">
+      <p class="menu-title">estra inc.</p>
+      <ul class="menu-content_inner">
+        <li>
+          <a href="#">home</a>
+        </li>
+        <li>
+          <a href="#">about</a>
+        </li>
+        <li>
+          <a href="#">service</a>
+        </li>
+        <li>
+          <a href="#">works</a>
+        </li>
+        <li>
+          <a href="#">price</a>
+        </li>
+        <li>
+          <a href="#">contact</a>
+        </li>
+      </ul>
+    </nav>
    </header>
    <p class="catchcopy">機械ではできない仕事を</p>
    <div class="news flex">
@@ -51,10 +63,10 @@
         ニュースタイトルがここには入ります。3月の決算報告書
       </p>
      </div>
-    <div class="news-icon">news</div>
+     <div class="news-icon">news</div>
    </div>
   </div>
- </template>
+</template>
 
 <script>
 export default {
@@ -84,26 +96,27 @@ export default {
   align-items: center;
 }
 
-.header-logo {
+.header-title {
   font-size: 20px;
   font-weight: bold;
   margin-left: 35px;
   color: #fff;
-  line-height: 70px;
+  line-height: 50px;
+  margin-top:10px ;
 }
 
-.header-nav li {
+.menu-content_inner li {
   display: inline-block;
   margin-right: 35px;
   font-size: 16px;
 }
 
-.header-nav a {
+.menu-content_inner  a {
   color: #fff;
 }
 
 #firstview {
-  height: 100%;
+  height: 600px;
   background: url("../assets/eyecatch.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -151,6 +164,7 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+
     .header-nav {
     display: none;
   }

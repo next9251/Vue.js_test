@@ -93,7 +93,8 @@ export default {
 }
 </script>
 
-<style>
+
+<style scoped>
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -268,6 +269,7 @@ body {
 
 .mission-img img{
   width: 40%;
+  height: 60%;
   position: absolute;
   bottom: -10%;
   right: 5%;
@@ -453,4 +455,5 @@ body {
     font-size: 30px;
   }
 }
+
 </style>
