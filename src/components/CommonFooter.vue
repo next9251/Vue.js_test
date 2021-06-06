@@ -64,5 +64,22 @@ background-color: #000;
   color:#fff;
 }
 
+@media screen and (max-width: 768px) {
+ .header-nav{
+  display: none
+ }
+ .small{
+   background-color: black
+ }
+}
+
+@media screen and (max-width : 480px){
+ .header-nav{
+  display: none
+ }
+  .small{
+   background-color: black
+ }
+}
 
 </style>
