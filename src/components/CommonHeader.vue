@@ -33,7 +33,7 @@
     </div>
    </header>
    <p class="catchcopy">機械ではできない仕事を</p>
-   <div class="news flex">
+   <div class="news">
      <div class="news-content">
        <p class="news_date">2019/01/01</p>
        <p class="news_title">
@@ -64,7 +64,7 @@ export default {
 #header {
   height: 70px;
   line-height: 70px;
-  background: rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 .header-wrap {
@@ -93,7 +93,7 @@ export default {
 }
 
 #firstview {
-  height: 600px;
+  height: 700px;
   background: url("../assets/eyecatch.jpg") no-repeat;
   background-size: cover;
   background-position: center;
@@ -117,11 +117,14 @@ export default {
   bottom: 0;
   right: 0;
   width: 50%;
+  display: flex;
+
 }
 .news-content {
   background: #fff;
   width: 80%;
   height: 70px;
+  line-height: 10px;
 }
 
 .news_date {
@@ -138,6 +141,7 @@ export default {
   line-height: 70px;
   text-align: center;
   color: #fff;
+
 }
 
 @media screen and (max-width: 768px) {

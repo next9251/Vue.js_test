@@ -20,6 +20,10 @@
 
 </template>
 <style>
+.flex {
+background-color: #000;
+}
+
 .header-logo {
   font-size: 20px;
   font-weight: bold;
@@ -42,6 +46,7 @@
    margin: 0;
    width: 100%;
    text-align: center;
+   background-color: #000;
 }
 
 .footer-bar {
@@ -52,10 +57,12 @@
 .top-footer {
   background: #000;
   text-align: center;
-}
+} 
 
 .top-footer small {
   text-align: center;
-  color: #fff;
+  color:#fff;
 }
+
+
 </style>
